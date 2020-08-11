@@ -16,6 +16,7 @@ $base-font: noto-sans, sans-serif;
 $saturated-purple: #6f4a8e;
 $purple-bg: #8675a9;
 $purple-bg-dark: #413c69;
+$cta-hover: #5e5399;
 $purple-bg-light: #f4eeff;
 $light-grey: #f9f9f9;
 
@@ -90,9 +91,10 @@ body{
             margin-bottom: 1.5rem;
             font-weight: 600;
             transition: background 0.2s linear;
+            outline: none;
 
             &:hover{
-                background-color: $purple-bg-dark;
+                background-color: $cta-hover;
                 transition: background 0.2s linear;
                 cursor: pointer;
             }

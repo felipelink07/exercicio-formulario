@@ -64,9 +64,10 @@ body {
   margin-bottom: 1.5rem;
   font-weight: 600;
   transition: background 0.2s linear;
+  outline: none;
 }
 .container #contato .cta:hover {
-  background-color: #413c69;
+  background-color: #5e5399;
   transition: background 0.2s linear;
   cursor: pointer;
 }
