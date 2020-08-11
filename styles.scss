@@ -37,6 +37,9 @@ $light-grey: #f9f9f9;
     color: $light-grey;
 }
 
+body{
+    background-color: #fafafa;
+}
 
 .header{
     margin: 0 auto;
@@ -65,6 +68,7 @@ $light-grey: #f9f9f9;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+
 
     #contato{
         background-color: white;
@@ -102,6 +106,7 @@ $light-grey: #f9f9f9;
 
         .input-block{
             display: flex;
+            position: relative;
             flex-flow: column nowrap;
             width: 90%;
             margin: 0 auto;
@@ -121,10 +126,22 @@ $light-grey: #f9f9f9;
                 outline: none;
                 font-family: $base-font;
                 font-size: 0.9rem;
+
                 &::placeholder{
                     color: #dddddd;
                 }
+
+                &:focus-within::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0px;
+                    width: 90%;
+                    height: 2px;
+                    background-color: $purple-bg-dark;
+                }
             }
+
+            
 
             &+.input-block{
                 margin-top: 30px;
@@ -141,8 +158,24 @@ $light-grey: #f9f9f9;
             input[type="date"]{
                 font-family: $base-font;
             }
+
+            input[type="text"]{
+                position: relative;
+            }
+
+            input[type="text"]::after{
+                content: '';
+                position: absolute;
+                bottom: 0px;
+                width: 90%;
+                height: 2px;
+                background-color: $purple-bg-dark;
+            }
+
         }
     }
+
+   
 
 }
 

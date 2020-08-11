@@ -8,6 +8,10 @@
 
 /* Variables */
 /* Mixins */
+body {
+  background-color: #fafafa;
+}
+
 .header {
   margin: 0 auto;
   width: 100%;
@@ -72,6 +76,7 @@
 }
 .container fieldset .input-block {
   display: flex;
+  position: relative;
   flex-flow: column nowrap;
   width: 90%;
   margin: 0 auto;
@@ -94,6 +99,14 @@
 .container fieldset .input-block input::placeholder {
   color: #dddddd;
 }
+.container fieldset .input-block input:focus-within::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 90%;
+  height: 2px;
+  background-color: #413c69;
+}
 .container fieldset .input-block + .input-block {
   margin-top: 30px;
 }
@@ -106,6 +119,17 @@
 }
 .container fieldset .input-block input[type=date] {
   font-family: noto-sans, sans-serif;
+}
+.container fieldset .input-block input[type=text] {
+  position: relative;
+}
+.container fieldset .input-block input[type=text]::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 90%;
+  height: 2px;
+  background-color: #413c69;
 }
 
 @media (min-width: 700px) {
