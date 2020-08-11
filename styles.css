@@ -1,0 +1,115 @@
+/* Imports */
+@import url("https://use.typekit.net/xeg8cvz.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+/* Mixins */
+.header {
+  margin: 0 auto;
+  width: 100%;
+  height: 12rem;
+  background-color: #413c69;
+  font-family: noto-sans, sans-serif;
+  font-weight: 600;
+  padding: 2.5rem;
+  text-align: center;
+}
+.header h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: noto-sans, sans-serif;
+  color: #f9f9f9;
+  margin-bottom: 0.6rem;
+}
+.header h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: noto-sans, sans-serif;
+  color: #f9f9f9;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 30px 2rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.container #contato {
+  background-color: white;
+  padding: 1.4rem;
+  border-radius: 1.2rem;
+  margin-top: -3.8rem;
+  box-shadow: 0px 2px 3px #CCC;
+}
+.container fieldset {
+  padding: 0px;
+  font-family: noto-sans, sans-serif;
+  border: none;
+  padding-bottom: 1rem;
+  margin-bottom: 1.8rem;
+  border-bottom: 1px solid #e9e9e9;
+}
+.container fieldset:nth-child(1) legend {
+  padding-top: 2.3rem;
+}
+.container fieldset:last-child {
+  padding-bottom: 0.3rem;
+  border-bottom: none;
+}
+.container fieldset legend {
+  width: 100%;
+  padding: 1.6rem 1.3rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #413c69;
+}
+.container fieldset .input-block {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 90%;
+  margin: 0 auto;
+}
+.container fieldset .input-block label {
+  display: block;
+  margin-bottom: 1.6rem;
+  color: #413c69;
+  font-weight: 600;
+}
+.container fieldset .input-block input {
+  padding: 15px;
+  width: 100%;
+  background-color: #f9f9f9;
+  border: none;
+  outline: none;
+  font-family: noto-sans, sans-serif;
+  font-size: 0.9rem;
+}
+.container fieldset .input-block input::placeholder {
+  color: #dddddd;
+}
+.container fieldset .input-block + .input-block {
+  margin-top: 30px;
+}
+.container fieldset .input-block input[type=submit] {
+  font-family: noto-sans, sans-serif;
+  background-color: #8675a9;
+  color: #fafafa;
+  font-size: 1.1rem;
+  margin-top: 53px;
+}
+.container fieldset .input-block input[type=date] {
+  font-family: noto-sans, sans-serif;
+}
+
+@media (min-width: 700px) {
+  .container {
+    max-width: 740px;
+  }
+}
