@@ -1,2 +1,3 @@
-# formulario
-Estudo de criação de formulário usando sass e html 
+# Formulário
+
+Repositório para estudos de criação de formulário usando sass e html 
