@@ -2,7 +2,7 @@
 
 Repositório para estudos de criação de formulário usando sass e html 
 
-### Imagens do formulário criado nesse estudo
-Abaixo temos o resultado final do formulário que criei como exercício
+### Resultado final
+Abaixo temos o resultado do formulário que criei com HTML e CSS.
 ###
 ![Parte superior do formulário](img/tela-projeto.png)
